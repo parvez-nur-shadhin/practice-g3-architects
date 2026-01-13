@@ -141,10 +141,20 @@
         flex-direction: column;
         gap: 20px;
     }
+    #quick-list {
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
     #heading img {
         width: 100%;
     }
     #banner {
         margin-top: 50px;
+    }
+    #quick-list .quick-list-img {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #quick-list .quick-list-content {
+        text-align: center;
     }
 }
