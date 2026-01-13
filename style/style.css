@@ -1,0 +1,150 @@
+/* Font Styling */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.work-sans-font {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Shared Styling */
+* {
+    padding: 0px;
+    margin: 0px;
+}
+.style-flex {
+    display: flex;
+}
+.text-gray-42 {
+    color: #424242;
+}
+.dark-1 {
+    color: #131313;
+}
+.dark-2 {
+    color: #727272;
+}
+.btn-primary {
+    background-color: #FF900E;
+    color: white;
+    border: none;
+    font-size: 1.25rem;
+    padding: 20px 25px;
+    border-radius: 8px;
+    margin-top: 32px;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+.btn-primary:hover {
+    background-color:rgb(255, 165, 0);
+    color: black;
+}
+/*-------> Main Styling */
+
+/* Heading */
+#heading {
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: rgba(255, 144, 14, 0.1);
+    padding: 50px 240px;
+}
+/* Navigation Bar */
+.navbar {
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-logo{
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+.navbar .menu{
+    gap: 30px;
+}
+.navbar .menu li {
+    list-style: none;
+}
+.navbar .menu li a{
+    text-decoration:none;
+    font-size: 1.12rem;
+    font-weight: 500;
+}
+/* Banner Styling */
+#banner {
+    max-width: 1440px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 150px;
+}
+#banner .banner-content {
+    max-width: 860px;
+    margin: 0 auto ;
+}
+#banner .banner-content .banner-heading {
+    font-size: 4rem;
+    font-weight: bold;
+}
+#banner .banner-content .banner-description {
+    font-size: 1rem;
+    font-weight: normal;
+    margin-top: 32px;
+}
+/* Quick List Section */
+#quick-list {
+    max-width: 1320px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    gap: 73px;
+    margin-top: 85px;
+}
+#quick-list .quick-list-img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+.quick-list-content {
+    max-width: 537px;
+}
+.quick-list-heading {
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+.span1 {
+    font-weight: 500;;
+}
+.span2 {
+    color: #FF900E;
+}
+.quick-list-paragraph {
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 26px;
+    margin-top: 24px;
+}
+
+
+
+
+
+
+
+
+
+
+/* View Breakpoint */
+@media screen and (max-width: 575px) {
+    #heading {
+        padding: 30px 16px;
+    }
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+    #heading img {
+        width: 100%;
+    }
+    #banner {
+        margin-top: 50px;
+    }
+}
