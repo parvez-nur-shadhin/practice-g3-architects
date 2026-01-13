@@ -89,6 +89,9 @@
     font-weight: normal;
     margin-top: 32px;
 }
+.banner-image {
+    width: 100%;
+}
 /* Quick List Section */
 #quick-list {
     max-width: 1320px;
@@ -313,5 +316,44 @@ footer {
     font-size: 0.55rem;
     font-weight: normal;
     margin-top: 40px;
+    }
+}
+@media screen and (min-width: 575px) and (max-width: 1180px) {
+    #heading img {
+        width: 100%;
+        padding: 32px 24px;
+    }
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+    #quick-list {
+        flex-direction: column;
+    }
+    #features {
+        flex-direction: column;
+    }
+    #features {
+        justify-content: center;
+        align-items: center;
+    }
+    .featured-img {
+        width: 100%;
+        text-align: center;
+    }
+    #features .featured-img button {
+        margin-top: 30px;
+        margin-left: 0px;
+    }
+    #some-facts .some-facts-cards {
+        grid-template-columns: repeat(2,1fr);
+    }
+    #sponsors .sponsors-logo{
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        gap: 30px;
+    }
+    footer {
+       padding: 32px 24px; 
     }
 }
